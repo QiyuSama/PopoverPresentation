@@ -7,23 +7,26 @@
 //
 
 #import "ViewController.h"
+#import "UIViewController+PopoverPresent.h"
 
 @interface ViewController ()
-
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *sourceView;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+}
+- (IBAction)onAdd:(UIButton *)sender {
+    UIViewController *vc = [UIViewController new];
+    vc.view.backgroundColor = [UIColor redColor];
+    vc.preferredContentSize = CGSizeMake(100, 100);
+    [self pp_presentViewController:vc sourceView:sender];
 }
 
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 
 @end

@@ -15,6 +15,8 @@
 		3B58C5B61FF3A86F00F6D3FD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B58C5B51FF3A86F00F6D3FD /* main.m */; };
 		3B58C5C01FF3A87000F6D3FD /* PopoverPresentationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B58C5BF1FF3A87000F6D3FD /* PopoverPresentationTests.m */; };
 		3B58C5CB1FF3A87000F6D3FD /* PopoverPresentationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B58C5CA1FF3A87000F6D3FD /* PopoverPresentationUITests.m */; };
+		3B58C5DA1FF3A8BB00F6D3FD /* UIViewController+PopoverPresent.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B58C5D91FF3A8BB00F6D3FD /* UIViewController+PopoverPresent.m */; };
+		3B58C5DD1FF3AB8B00F6D3FD /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B58C5DB1FF3AB8A00F6D3FD /* UIView+MJExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		3B58C5C61FF3A87000F6D3FD /* PopoverPresentationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PopoverPresentationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B58C5CA1FF3A87000F6D3FD /* PopoverPresentationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PopoverPresentationUITests.m; sourceTree = "<group>"; };
 		3B58C5CC1FF3A87000F6D3FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B58C5D81FF3A8BB00F6D3FD /* UIViewController+PopoverPresent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+PopoverPresent.h"; sourceTree = "<group>"; };
+		3B58C5D91FF3A8BB00F6D3FD /* UIViewController+PopoverPresent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+PopoverPresent.m"; sourceTree = "<group>"; };
+		3B58C5DB1FF3AB8A00F6D3FD /* UIView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJExtension.m"; sourceTree = "<group>"; };
+		3B58C5DC1FF3AB8A00F6D3FD /* UIView+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MJExtension.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,10 @@
 		3B58C5A51FF3A86F00F6D3FD /* PopoverPresentation */ = {
 			isa = PBXGroup;
 			children = (
+				3B58C5DC1FF3AB8A00F6D3FD /* UIView+MJExtension.h */,
+				3B58C5DB1FF3AB8A00F6D3FD /* UIView+MJExtension.m */,
+				3B58C5D81FF3A8BB00F6D3FD /* UIViewController+PopoverPresent.h */,
+				3B58C5D91FF3A8BB00F6D3FD /* UIViewController+PopoverPresent.m */,
 				3B58C5A61FF3A86F00F6D3FD /* AppDelegate.h */,
 				3B58C5A71FF3A86F00F6D3FD /* AppDelegate.m */,
 				3B58C5A91FF3A86F00F6D3FD /* ViewController.h */,
@@ -265,6 +275,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B58C5DA1FF3A8BB00F6D3FD /* UIViewController+PopoverPresent.m in Sources */,
+				3B58C5DD1FF3AB8B00F6D3FD /* UIView+MJExtension.m in Sources */,
 				3B58C5AB1FF3A86F00F6D3FD /* ViewController.m in Sources */,
 				3B58C5B61FF3A86F00F6D3FD /* main.m in Sources */,
 				3B58C5A81FF3A86F00F6D3FD /* AppDelegate.m in Sources */,
@@ -433,6 +445,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P7FF277Z5R;
 				INFOPLIST_FILE = PopoverPresentation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xiangchao.PopoverPresentation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -447,6 +460,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P7FF277Z5R;
 				INFOPLIST_FILE = PopoverPresentation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xiangchao.PopoverPresentation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
