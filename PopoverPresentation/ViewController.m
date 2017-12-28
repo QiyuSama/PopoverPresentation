@@ -19,14 +19,11 @@
     [super viewDidLoad];
     
 }
+
 - (IBAction)onAdd:(UIButton *)sender {
     UIViewController *vc = [UIViewController new];
     vc.view.backgroundColor = [UIColor redColor];
     vc.preferredContentSize = CGSizeMake(100, 100);
     [self pp_presentViewController:vc sourceView:sender];
 }
-
-
-
-
 @end

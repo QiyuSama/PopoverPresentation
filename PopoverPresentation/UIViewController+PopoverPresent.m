@@ -44,6 +44,7 @@
         arrow.image = [UIImage imageNamed:@"menu_arrow"];
         arrow.layer.anchorPoint = CGPointMake(0.5, 0);
         arrow.center = arrowPoint;
+        arrow.mj_x -= 5;
         [arrow sizeToFit];
         [container addSubview:arrow];
         
